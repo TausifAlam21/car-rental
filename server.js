@@ -29,7 +29,7 @@ if(process.env.NODE_ENV==='production')
 
 }
 
-app.get('/', (req, res) => res.send('Welcome to car rental backend'))
+app.get('/', (req, res) => res.send('Welcome to the car rental backend'))
 
 
  
