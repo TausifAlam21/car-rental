@@ -2,8 +2,10 @@ const express = require('express')
 const app = express()
 const port = process.env.PORT || 5000
 const dotenv = require('dotenv')
+const cors = require('cors'); //Middleware to send data to backend
 
 const dbConnection = require('./db')
+app.use(cors());
 app.use(express.json())
 
 //env config

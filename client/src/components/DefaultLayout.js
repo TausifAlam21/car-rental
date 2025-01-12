@@ -30,6 +30,14 @@ function DefaultLayout(props) {
           Admin
         </a>
       </Menu.Item>
+      <Menu.Item>
+        <a
+         
+          href="/contact"
+        >
+          Contact
+        </a>
+      </Menu.Item>
       <Menu.Item onClick={()=>{
           localStorage.removeItem('user');
           window.location.href='/login'

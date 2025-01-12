@@ -12,6 +12,7 @@ import UserBookings from './pages/UserBookings';
 import AddCar from './pages/AddCar';
 import AdminHome from './pages/AdminHome';
 import EditCar from './pages/EditCar';
+import Contact from './pages/Contact';
 
 export const ProtectedRoute = ({ children }) => {
   
@@ -29,10 +30,16 @@ const router = createBrowserRouter([
   },{
     path: "/login",
     element: <Login/>
-  },{
+  },
+  {
     path: "/register",
     element: <Register/>
-  },{
+  },
+  {
+    path: "/contact",
+    element: <Contact/>
+  },
+  {
     path: "/booking/:carid",
     element: <ProtectedRoute><BookingCar /></ProtectedRoute>,
     loader: ({params})=>{
