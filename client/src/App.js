@@ -13,6 +13,7 @@ import AddCar from './pages/AddCar';
 import AdminHome from './pages/AdminHome';
 import EditCar from './pages/EditCar';
 import Contact from './pages/Contact';
+import BookACar from './pages/BookACarPage';
 
 export const ProtectedRoute = ({ children }) => {
   
@@ -26,8 +27,13 @@ export const ProtectedRoute = ({ children }) => {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <ProtectedRoute><Home/></ProtectedRoute>,
-  },{
+    element: <Home/>,
+  },
+  {
+    path: "/book-cars",
+    element: <BookACar/>,
+  },
+  {
     path: "/login",
     element: <Login/>
   },
